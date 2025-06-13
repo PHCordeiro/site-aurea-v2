@@ -32,8 +32,8 @@ const Routes = () => {
             <Route component={Eletrica} path='/Servicos-Eletrica'/>
             <Route component={Negocios} path='/Servicos-Negocios'/>
             <Route component={Members} path='/membros'/>
-            <Route component={BlogAdm} path='/Blog-Aurea-Admin'/>
-            <Route component={Blog} path='/Blog'/>
+            {/*<Route component={BlogAdm} path='/Blog-Aurea-Admin'/>
+            <Route component={Blog} path='/Blog'/>*/} {/* Descomentar no se precisar do blog novamente*/}
             <Route component={PS} path='/Processo-Seletivo'/> {/* remover no final do PS */}
             <Route component={SinglePostBlog} path='/post/:idPost' />
 

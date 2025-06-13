@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+/*import { React, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/header'
@@ -158,4 +158,4 @@ export default function Blog() {
 
     )
 
-}
+}*/

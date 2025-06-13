@@ -63,7 +63,7 @@ export default function Header(props) {
                             <li> <Link onClick={scrollToTop} to='/Quem-somos-nos'> Quem Somos </Link> </li>
                             <li> <Link onClick={scrollToTop} to='/Servicos'> Serviços </Link> </li>
                             <li> <Link onClick={scrollToTop} to='/Contato'> Contato </Link> </li>
-                            <li> <Link onClick={scrollToTop} to='/Blog'> Blog </Link> </li>
+                            {/*<li> <Link onClick={scrollToTop} to='/Blog'> Blog </Link> </li>*/}
 
                         </ul>
 
@@ -100,7 +100,7 @@ export default function Header(props) {
                         <a href="/Quem-somos-nos"> Quem Somos </a>
                         <a href="/Servicos"> Serviços </a>
                         <a href="/Contato"> Contato </a>
-                        <a href="/Blog"> Blog </a>
+                        {/*<a href="/Blog"> Blog </a>*/}
 
                     </ul>
 
