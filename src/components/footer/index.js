@@ -7,8 +7,8 @@ import instagramIcon from '../../imgs/instagramIcon.png'
 import facebookIcon from '../../imgs/facebookIcon.png'
 import linkedinIcon from '../../imgs/linkedinIcon.png'
 import logoAurea from '../../imgs/logoAurea2.png'
-import mascote from '../../imgs/AureaMascote1.png'
-import balaodefala from '../../imgs/balaodefala3.png'
+{/*import mascote from '../../imgs/AureaMascote1.png'
+import balaodefala from '../../imgs/balaodefala3.png'*/}
 
 export default function Footer (props) {
 
@@ -47,12 +47,12 @@ export default function Footer (props) {
 
                 </div>
 
-                <div className='mascoteFooter' >
+                {/*<div className='mascoteFooter' >
 
                     <Link to='/contato'> <img src={balaodefala} alt="balaodefala"/> </Link>
                     <img src={mascote} alt="mascote"/>
 
-                </div>
+                </div>*/}
 
             </div>
 
