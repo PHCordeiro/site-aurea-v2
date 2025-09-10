@@ -26,10 +26,11 @@ footer {
 .logoFooter {
 
     height: 100%;
+    text-align: right;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    //flex-direction: column;
     width: 100%;
 
 }
@@ -38,8 +39,13 @@ footer {
 .logoFooter img {
 
     height: 30vh;
+    width: 20vw;
 
 }
+
+/*.buttonContato{
+
+}*/
 
 .about {
     display: flex;
@@ -79,7 +85,7 @@ footer {
 
 .adress p {
     margin-top: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .socialMedia {
@@ -91,29 +97,15 @@ footer {
     width: 100%;
 }
 
-.mascoteFooter {
-
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 30%;
-    margin-right: 25px;
-
-}
-
-
-.mascoteFooter img {
-
-    height: 30vh;
-
+.espacologos{
+    padding-right: 5px;
 }
 
 .copyright h1 {
     margin-top: 25px;
     font-size: 1rem;
     font-weight: 100;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,7 +145,7 @@ footer {
         }
     }
 
-    .mascoteFooter {
+    /*.mascoteFooter {
         width: 80vw;
         margin-right: 0px;
         padding-top: 50px;
@@ -161,7 +153,7 @@ footer {
         img {
             height: 20vh;
         }
-    }
+    }*/
 
     .copyright {
         width: 80vw;

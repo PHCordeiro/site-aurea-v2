@@ -29,6 +29,10 @@ export default function Footer (props) {
 
                     </div>
 
+                    <div classname="buttonContato">
+                            
+                    </div>
+
                     <div className='adress' >
 
                         <p>Endereço: R. Dr. Siqueira, 273 - Parque Dom Bosco, Campos dos Goytacazes - RJ, 28030-130 <br/> IFF Sala B-120</p>    
@@ -38,19 +42,12 @@ export default function Footer (props) {
                         <p>CNPJ: 27.447.124/0001-76</p>
 
                         <div className="socialMedia">
-                            <a href='https://www.instagram.com/aureaemp.iff?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noreferrer"> <img src={instagramIcon} alt='logoInstagram' /> </a>
-                            <a href='https://www.facebook.com/aureaej' target="_blank" rel="noreferrer"> <img src={facebookIcon} alt='logoFacebook' /> </a>
-                            <a href='https://www.linkedin.com/company/aureaej/'  target="_blank" rel="noreferrer"> <img src={linkedinIcon} alt='logoLinkedin' /> </a>
+                            <a href='https://www.instagram.com/aureaemp.iff?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noreferrer" class="espacologos"> <img src={instagramIcon} alt='logoInstagram' /> </a>
+                            <a href='https://www.facebook.com/aureaej' target="_blank" rel="noreferrer" class="espacologos"> <img src={facebookIcon} alt='logoFacebook' /> </a>
+                            <a href='https://www.linkedin.com/company/aureaej/'  target="_blank" rel="noreferrer" class="espacologos"> <img src={linkedinIcon} alt='logoLinkedin' /> </a>
                         </div>
 
                     </div>
-
-                </div>
-
-                <div className='mascoteFooter' >
-
-                    <Link to='/contato'> <img src={balaodefala} alt="balaodefala"/> </Link>
-                    <img src={mascote} alt="mascote"/>
 
                 </div>
 
