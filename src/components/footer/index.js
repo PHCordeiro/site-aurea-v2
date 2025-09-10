@@ -38,7 +38,7 @@ export default function Footer (props) {
                         <p>CNPJ: 27.447.124/0001-76</p>
 
                         <div className="socialMedia">
-                            <a href='https://www.instagram.com/aureaej/' target="_blank" rel="noreferrer"> <img src={instagramIcon} alt='logoInstagram' /> </a>
+                            <a href='https://www.instagram.com/aureaemp.iff?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noreferrer"> <img src={instagramIcon} alt='logoInstagram' /> </a>
                             <a href='https://www.facebook.com/aureaej' target="_blank" rel="noreferrer"> <img src={facebookIcon} alt='logoFacebook' /> </a>
                             <a href='https://www.linkedin.com/company/aureaej/'  target="_blank" rel="noreferrer"> <img src={linkedinIcon} alt='logoLinkedin' /> </a>
                         </div>
