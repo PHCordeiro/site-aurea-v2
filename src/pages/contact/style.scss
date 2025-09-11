@@ -1,201 +1,77 @@
 @import "../../global.scss";
 
-* {
-    &::selection{
-        background-color: $roxo;
-        color: $amarelo;
-    }
-}
-
-#App {
-    background-color: $preto;
+.contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    background: #0d0d0d; // fundo tipo card
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 
-}
-
-#contactMain {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-
-    .logo-2 {
-        img {
-            margin-top: 100px;
-            object-fit: contain;
-            height: 30vh;
-            width: auto;
-            select: none;
-        }
-    }
-
-    h2 {
-        color: $roxo;
-        font-size: 2em;
-        animation: glitch1 2s infinite;
-    }
-
-    h2::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        inset: 0 0 0 0;
-        background: #d4d4d4;
-        
-        z-index: -1;
-        transition: transform .3s ease;
-      }
-      
-    h2::before {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
-
-    h2:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-
-    p {
-        color: $amarelo;
-        text-align: justify;
-        text-indent: 2em;
-    }
-
-    h2, p {
-        margin: 20px;
-    }
-
-    .contact-form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    input, select, textarea {
+        margin: 10px 0;
         width: 100%;
+        max-width: 500px;
+        padding: 12px;
+        border-radius: 8px;
+        background: transparent;
+        border: 2px solid $amarelo;
+        color: $amarelo;
+        font-weight: 500;
+        transition: all 0.3s ease;
 
-        input, select {
-            margin: 5px 0px 5px 0px;
-            width: 40vw;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: $amarelo;
-            color: $preto;
-            font-weight: bold;
-            border: none;
+        &:focus {
+            border-color: $roxo;
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+            outline: none;
         }
+    }
 
-        input {
-            height: 30px;
-        }
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    .leftAlign {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        max-width: 500px;
 
         select {
-            width: 15vw;
-        }
-
-        textarea {
-            margin: 5px 0px 5px 0px;
-            width: 40vw;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: $amarelo;
-            color: $preto;
-            border: none;
-            font-weight: bold;
-        }
-
-        .leftAlign {
-            display: flex;
-            align-items: space-between;
-            justify-content: space-between;
-            margin: 5px 0px 5px 0px;
-            width: 40vw;
-            border-radius: 5px;
-            color: $preto;
-            font-weight: bold;
-            border: none;
-        }
-
-        .buttonsFormRegister {
-
-            input {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 10vw;
-                height: 5vh;
-                background-color: $roxo;
-                color: $branco;
-                transition: all 0.5s;
-            }
-
-            input:hover {
-                cursor: pointer;
-                background-color: $cinza;
-            }
-
-            input:active {
-                background-color: $amarelo;
-                transition: all 0.1s;
-            }
+            flex: 1;
         }
     }
 
-    .whatsappContact {
-        h3 {
-            color: $amarelo;
-        }
-    }
-}
+    .buttonsFormRegister {
+        width: 100%;
+        max-width: 500px;
 
-@media screen and (max-width: 768px) {
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(90deg, $amarelo, $roxo);
+            color: $branco;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, opacity 0.3s ease;
 
-    #contactMain {
-        width: 80vw;
-
-        h2 {
-            font-size: 1.6em;
-            margin-left: 0;
-            background-color: #d4d4d4;
-        }
-
-        p {
-            font-size: 1em;
-        }
-
-        .contact-form {
-            input, textarea {
-                width: 80vw;
+            &:hover {
+                transform: scale(1.05);
+                opacity: 0.9;
             }
 
-            .leftAlign {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: space-between;
-                margin: 5px 0px 5px 0px;
-                width: 80vw;
-                border-radius: 5px;
+            &:active {
+                transform: scale(0.97);
+                background: $amarelo;
                 color: $preto;
-                font-weight: bold;
-                border: none;
-
-                select {
-                    width: 85vw;
-                }
-            }
-
-            .buttonsFormRegister {
-                width: 80vw;
-
-                input {
-                    width: 80vw;
-                }
             }
         }
     }
