@@ -30,7 +30,18 @@ export default function Footer (props) {
                     </div>
 
                     <div classname="buttonContato">
-                            
+                            <a class="cta" href="https://wa.me/5522998157124">
+                                <span class='textButton'>  FALE CONOSCO</span>
+                                <span>
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                                        <path className="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 ..." fill="#FFFFFF"/>
+                                        <path className="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 ..." fill="#FFFFFF"/>
+                                        <path className="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 ..." fill="#FFFFFF"/>
+                                    </g>
+                                    </svg>
+                                </span> 
+                            </a>
                     </div>
 
                     <div className='adress' >
