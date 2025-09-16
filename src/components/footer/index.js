@@ -29,6 +29,22 @@ export default function Footer (props) {
 
                     </div>
 
+
+                    <div classname="buttonContato">
+                            <a className="cta" href="https://wa.me/5522998157124" target="_blank" rel="noreferrer">
+                                <span className='textButton'>  FALE CONOSCO</span>
+                                <span>
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                                        <path className="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 ..." fill="#FFFFFF"/>
+                                        <path className="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 ..." fill="#FFFFFF"/>
+                                        <path className="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 ..." fill="#FFFFFF"/>
+                                    </g>
+                                    </svg>
+                                </span> 
+                            </a>
+                    </div>
+
                     <div className='adress' >
 
                         <p>Endereço: R. Dr. Siqueira, 273 - Parque Dom Bosco, Campos dos Goytacazes - RJ, 28030-130 <br/> IFF Sala B-120</p>    
@@ -38,21 +54,15 @@ export default function Footer (props) {
                         <p>CNPJ: 27.447.124/0001-76</p>
 
                         <div className="socialMedia">
-                            <a href='https://www.instagram.com/aureaej/' target="_blank" rel="noreferrer"> <img src={instagramIcon} alt='logoInstagram' /> </a>
-                            <a href='https://www.facebook.com/aureaej' target="_blank" rel="noreferrer"> <img src={facebookIcon} alt='logoFacebook' /> </a>
-                            <a href='https://www.linkedin.com/company/aureaej/'  target="_blank" rel="noreferrer"> <img src={linkedinIcon} alt='logoLinkedin' /> </a>
+                            <a href='https://www.instagram.com/aureaemp.iff?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noreferrer" class="espacologos"> <img src={instagramIcon} alt='logoInstagram' /> </a>
+                            <a href='https://www.facebook.com/aureaej' target="_blank" rel="noreferrer" class="espacologos"> <img src={facebookIcon} alt='logoFacebook' /> </a>
+                            <a href='https://www.linkedin.com/company/aureaej/'  target="_blank" rel="noreferrer" class="espacologos"> <img src={linkedinIcon} alt='logoLinkedin' /> </a>
                         </div>
 
                     </div>
 
                 </div>
 
-                {/*<div className='mascoteFooter' >
-
-                    <Link to='/contato'> <img src={balaodefala} alt="balaodefala"/> </Link>
-                    <img src={mascote} alt="mascote"/>
-
-                </div>*/}
 
             </div>
 
