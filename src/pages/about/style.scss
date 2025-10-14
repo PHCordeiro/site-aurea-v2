@@ -47,6 +47,10 @@
             border-radius: 5px;
 
         }
+
+        p {
+            text-align: justify;
+        }
     }
 
     .heroImgWrapper {
@@ -69,7 +73,7 @@
     }
 
     h1 {
-        color: $roxo;
+        color: $branco;
         font-size: 4em;
         margin-block-start: 0.67em;
         margin-block-end: 0.67em;
@@ -79,29 +83,6 @@
         text-align: left;
         z-index: 1;
 
-        animation: glitch1 2s infinite;
-    }
-
-    h1::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        inset: 0 0 0 0;
-        background: #d4d4d4;
-        
-        z-index: -1;
-        transition: transform .3s ease;
-      }
-      
-    h1::before {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
-
-    h1:hover::before {
-        transform: scaleX(0.8);
-        transform-origin: bottom left;
     }
 
     a {
@@ -138,35 +119,13 @@
         flex-direction: column;
 
         h1 {
-            color: $roxo;
+            color: $branco;
             font-size: 3em;
             font-weight: bold;
             text-align: right;
 
-            animation: glitch1 2s infinite;
         }
 
-        h1::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            inset: 0 0 0 0;
-            background: #d4d4d4;
-            
-            z-index: -1;
-            transition: transform .3s ease;
-          }
-          
-        h1::before {
-            transform: scaleX(0);
-            transform-origin: bottom right;
-        }
-    
-        h1:hover::before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
 
         p {
             color: $amarelo;
@@ -177,7 +136,7 @@
             margin-inline-end: 0px;
             font-weight: bold;
             z-index: 1;
-            text-align: justify;
+            text-align: center;
             width: 50vw;
             text-indent: 2em;
         }
@@ -197,7 +156,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             padding: 1em;
-            text-align: left;
+            text-align: justify;
             margin: 0 10px 10px 10px;
             width: 25vw;
             height: 25vh;
@@ -213,7 +172,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             padding: 1em;
-            text-align: left;
+            text-align: justify;
             margin: 0 10px 10px 10px;
             width: 25vw;
             height: 25vh;
@@ -276,26 +235,6 @@
             font-size: 1.5em;
         }
         
-        h3::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            inset: 0 0 0 0;
-            background: $preto;
-            z-index: -1;
-            transition: transform .3s ease;
-          }
-          
-        h3::before {
-            transform: scaleX(0);
-            transform-origin: bottom right;
-        }
-    
-        h3:hover::before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
 
     }
 }
@@ -312,7 +251,7 @@
 
     #textIntroTestimonial {
 
-            color: $roxo;
+            color: $branco;
             font-size: 4em;
             margin-block-start: 0.67em;
             margin-block-end: 0.67em;
@@ -321,31 +260,6 @@
             font-weight: bold;
             text-align: left;
             z-index: 1;
-    
-            animation: glitch1 2s infinite;
-    
-            &::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            inset: 0 0 0 0;
-            background: #d4d4d4;
-            
-            z-index: -1;
-            transition: transform .3s ease;
-          }
-          
-        &::before {
-            transform: scaleX(0);
-            transform-origin: bottom right;
-        }
-    
-        &:hover::before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-        
     }
 
     .membersCardTestimonialWrapper{
@@ -501,7 +415,7 @@
                     font-size: 2em;
                     margin-left: 0;
                     width: 80vw;
-                    background-color: #d4d4d4;
+                    // background-color: #d4d4d4;
                 }
 
                 p {

@@ -49,7 +49,7 @@
         
 
         h1 {
-            color: $roxo;
+            color: $branco;
             font-size: 4rem;
             line-height: 4rem;
             //text-shadow: -2px 3px 5px rgba(121, 8, 196, 0.548);
@@ -62,7 +62,7 @@
             // border-radius: 2rem;
 
             // animation: flicker 1.5s infinite alternate;
-            animation: glitch1 2s infinite;
+            // animation: glitch1 2s infinite;
         }
 
         // h1::-moz-selection {
@@ -79,27 +79,27 @@
         //     outline: none;
         //   }
 
-        h1::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            inset: 0 0 0 0;
-            background: #d4d4d4;
+        // h1::before {
+        //     content: " ";
+        //     display: block;
+        //     position: absolute;
+        //     top: 0; right: 0; bottom: 0; left: 0;
+        //     inset: 0 0 0 0;
+        //     background: #d4d4d4;
             
-            z-index: -1;
-            transition: transform .3s ease;
-          }
+        //     z-index: -1;
+        //     transition: transform .3s ease;
+        //   }
           
-        h1::before {
-            transform: scaleX(0);
-            transform-origin: bottom right;
-        }
+        // h1::before {
+        //     transform: scaleX(0);
+        //     transform-origin: bottom right;
+        // }
 
-        h1:hover::before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
+        // h1:hover::before {
+        //     transform: scaleX(1);
+        //     transform-origin: bottom left;
+        // }
         
         h2 {
             font-weight: 200;
@@ -190,38 +190,17 @@
     
     h1 {
 
-        text-align: left;
-        margin-left: 3rem;
-        width: 40vw;
-        color: $roxo;
+        text-align: center;
+        width: 100%;
+        color: $branco;
         margin-top: 5vh;
         font-size: 3rem;
         //text-shadow: -2px 3px 5px rgba(121, 8, 196, 0.548);
 
-        animation: glitch1 2s infinite;
 
     }
 
-    h1::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        inset: 0 0 0 0;
-        background: #d4d4d4;
-        z-index: -1;
-        transition: transform .3s ease;
-      }
-      
-    h1::before {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
-
-    h1:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+    
 
     p {
         text-align: center;
@@ -229,30 +208,9 @@
         color: $amarelo;
         margin-top: 5vh;
         font-size: 1.5rem;
-        animation: glitch1 2s infinite;
+        // animation: glitch1 2s infinite;
     }
 
-    p::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        inset: 0 0 0 0;
-        background: $roxo;
-        z-index: -1;
-        transition: transform .3s ease;
-      }
-      
-    p::before {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
-
-    p:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
 
     h2 {
 
@@ -466,29 +424,6 @@
                 font-size: 3rem;
                 line-height: 2.8rem;
                 color: $amarelo;
-                animation: glitch1 2s infinite;
-            }
-
-            h1::before {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0; right: 0; bottom: 0; left: 0;
-                inset: 0 0 0 0;
-                background: $roxo;
-                
-                z-index: -1;
-                transition: transform .3s ease;
-              }
-              
-            h1::before {
-                transform: scaleX(0);
-                transform-origin: bottom right;
-            }
-        
-            h1:hover::before {
-                transform: scaleX(1);
-                transform-origin: bottom left;
             }
 
             p {
@@ -498,6 +433,7 @@
                 font-size: 1.3rem;
                 color: #fff;
                 font-weight: 300;
+                text-align: justify;
                 line-height: 1.9rem;
 
             }
@@ -552,6 +488,7 @@
             justify-content: flex-start;
             padding: 30px;
             width: 400px;
+            text-align: justify;
 
             border-top-left-radius: 12px;
             border-bottom-left-radius: 12px;
@@ -613,6 +550,7 @@
         font-size: 3rem;
         margin-left: 3rem;
         color: $amarelo;
+        text-align: center;
     }
 
     p {
@@ -620,6 +558,7 @@
         font-size: 1.3rem;
         font-weight: 200;
         padding: 0 3rem;
+        text-align: center;
     }
     
     .partnersCardsWrapper {
@@ -872,7 +811,7 @@
             font-size: 1.6em;
             margin-left: 0;
             width: 80vw;
-            background-color: #d4d4d4;
+            // background-color: #d4d4d4;
         }
 
         h2 {
@@ -949,7 +888,8 @@
                     line-height: 2rem;
                     margin-left: 0;
                     width: 80vw;
-                    background-color: $roxo;
+                    // background-color: $roxo;
+                    text-align: center;
                 }
         
                 p {

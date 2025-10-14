@@ -29,34 +29,10 @@
         }
 
         h1 {
-            color: $roxo;
+            color: $branco;
             font-size: 3em;
             font-weight: bold;
             text-align: right;
-
-            animation: glitch1 2s infinite;
-        }
-
-        h1::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            inset: 0 0 0 0;
-            background: #d4d4d4;
-            
-            z-index: -1;
-            transition: transform .3s ease;
-          }
-          
-        h1::before {
-            transform: scaleX(0);
-            transform-origin: bottom right;
-        }
-    
-        h1:hover::before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
         }
 
         .textHeadServices {
@@ -69,7 +45,7 @@
             p {
                 color: $amarelo;
                 margin-top: 2em;
-                text-align: justify;
+                text-align: center;
                 font-size: 1.2em;
                 text-indent: 2em;
             }
@@ -186,7 +162,8 @@
                     font-size: 1.6em;
                     margin-left: 0;
                     width: 80vw;
-                    background-color: #d4d4d4;
+                    text-align: center;
+                    // background-color: #d4d4d4;
                 }
         
                 p {

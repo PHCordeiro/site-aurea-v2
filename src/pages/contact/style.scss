@@ -35,32 +35,10 @@
     }
 
     h2 {
-        color: $roxo;
+        color: $branco;
         font-size: 2em;
-        animation: glitch1 2s infinite;
     }
 
-    h2::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        inset: 0 0 0 0;
-        background: #d4d4d4;
-        
-        z-index: -1;
-        transition: transform .3s ease;
-      }
-      
-    h2::before {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
-
-    h2:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
 
     p {
         color: $amarelo;
@@ -161,7 +139,8 @@
         h2 {
             font-size: 1.6em;
             margin-left: 0;
-            background-color: #d4d4d4;
+            text-align: center;
+            // background-color: #d4d4d4;
         }
 
         p {
