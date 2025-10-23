@@ -1,5 +1,85 @@
 @import "../../global.scss";
 
+#App { 
+    background-color: #000000; 
+    min-height: 100vh;
+
+    // Adiciona uma camada de "ruído" sutil
+    background-image: 
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0, transparent 20%), 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../../imgs/preto\ texturizado.jpg'); 
+    
+    // Se não quiser imagem, use apenas o gradiente sutil:
+    // background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    // background-size: 4px 4px;
+
+
+    
+}
+
+
+#contactMain {
+    // Adicione estilos para a seção principal
+    // Centraliza todo o conteúdo da seção horizontalmente
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Isso centraliza o logo, o h2, o p e o form */
+    padding: 50px 50px; // Adiciona um padding para respiro
+    width: 100%;
+
+}
+
+.logo-2 {
+    // Garante que o contêiner do logo não atrapalhe a centralização
+    // Limite a largura para ficar alinhado com o formulário
+    width: 100%;
+    max-width: 400px;
+    text-align: center; // Centraliza a imagem do logo dentro de .logo-2
+    margin-bottom: 20px; // Espaçamento após o logo
+
+    img {
+        // Estilize a imagem do logo aqui se precisar
+        max-width: 100%; // Garante que não ultrapasse 1000px
+        height: auto;
+    }
+}
+
+h2 {
+    // Aumente o tamanho e use a cor dourada para destaque
+    width: 700px;
+    color: $amarelo;
+    /* Substitua pelo seu nome de variável para a cor dourada */
+    font-size: 2.0rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    /* Sombra suave para destacar no fundo preto */
+}
+
+p {
+    // Mantenha o texto em branco ou cinza claro para contraste e legibilidade
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    /* Aumenta o espaço entre o texto de apoio e o formulário */
+    max-width: 500px;
+}
+
+h2,
+p {
+    // Alinha e limita a largura do título e do parágrafo
+
+    width: 100%;
+    max-width: 1000px;
+    /* Alinha com a largura dos inputs do formulário */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-bottom: 10px; // Espaçamento entre os textos e o formulário
+}
+
 .contact-form {
     display: flex;
     justify-content: center;
@@ -7,31 +87,41 @@
     flex-direction: column;
     width: 100%;
     padding: 2rem;
-    background: #0d0d0d; // fundo tipo card
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 
-    input, select, textarea {
+
+    /* ❌ Removido o fundo que alterava o site
+       background: #0d0d0d;
+    */
+
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(255, 215, 0, 0.15);
+
+    input,
+    select,
+    textarea {
         margin: 10px 0;
         width: 100%;
         max-width: 500px;
         padding: 12px;
         border-radius: 8px;
-        background: transparent;
+        background-color: white;
+        /* mantém fundo preto do site */
         border: 2px solid $amarelo;
-        color: $amarelo;
+        color: black;
         font-weight: 500;
         transition: all 0.3s ease;
 
         &:focus {
-            border-color: $roxo;
-            box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+            border-color: #dbb826;
+            box-shadow: 0 0 15px rgba(228, 177, 10, 0.8), 0 0 5px rgba(228, 177, 10, 0.4);
             outline: none;
+            // Adicione um pequeno deslocamento para dar profundidade
+            transform: translateY(-1px);
         }
     }
 
     textarea {
-        height: 120px;
+        height: 150px;
         resize: none;
     }
 
@@ -39,7 +129,7 @@
         display: flex;
         justify-content: space-between;
         gap: 10px;
-        width: 100%;
+        width: 50%;
         max-width: 500px;
 
         select {
@@ -56,23 +146,23 @@
             padding: 12px;
             border-radius: 8px;
             border: none;
-            background: linear-gradient(90deg, $amarelo, $roxo);
-            color: $branco;
+            background-color: #dbb826;
+            color: black;
             font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.2s ease, opacity 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 
             &:hover {
-                transform: scale(1.05);
                 opacity: 0.9;
+                // Mantenha o transform original e adicione um box-shadow mais forte
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+                // Aumente a saturação do gradiente para parecer mais vibrante
+                filter: brightness(1.1);
             }
 
-            &:active {
-                transform: scale(0.97);
-                background: $amarelo;
-                color: $preto;
-            }
         }
     }
 }

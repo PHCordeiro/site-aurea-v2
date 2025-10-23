@@ -10,7 +10,7 @@
 
 ::-webkit-scrollbar {
 
-    background: #FFF;
+    background: #ffffff;
 
 }
 
@@ -26,3 +26,8 @@ $cinza: #585755;
 $preto: #000;
 $branco: #fff;
 $vinhoCopa: #821A4B;
+
+body, #root {
+  background-color: #000; /* fundo preto original */
+  color: #fff;
+}

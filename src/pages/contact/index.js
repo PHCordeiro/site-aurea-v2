@@ -64,8 +64,10 @@ const WhoWeAre = () => {
       'user_uRxvWrLzQd7xUEe5YKt22' // seu User ID
     )
       .then((result) => {
-        console.log(result.text)
-        alert("E-mail enviado com sucesso!")
+        alert("E-mail enviado com sucesso!"); // substitua por um feedback visual
+    // Exemplo de feedback mais estético (se você tiver um elemento com ID 'success-message')
+    // document.getElementById('success-message').style.display = 'block';
+    e.target.reset();
       }, (error) => {
         console.error(error.text)
         alert("Erro! Entre em contato por outro meio e nos avise desse erro!")
@@ -88,8 +90,8 @@ const WhoWeAre = () => {
           <img src={logoAurea} alt="Logo Aurea" />
         </div>
 
-        <h2>Entre em contato conosco!</h2>
-        <p>Preencha os campos abaixo e clique em "Enviar Mensagem". Em no máximo 2 dias úteis você receberá uma resposta da nossa equipe.</p>
+        <h2>ENTRE EM CONTATO CONOSCO!</h2>
+        <p>Preencha os campos abaixo e clique em "Enviar Mensagem". </p>
 
         <form className="contact-form" onSubmit={sendEmail}>
           <input type="text" className="textBox" name="user_name" placeholder="Nome*" required />
