@@ -85,7 +85,7 @@ function Members() {
 
                         <div className="membersFeedbackText">
 
-                            <h3>The only one 💯</h3>
+                            <h3>The only one 💯 </h3>
 
                             <h5>Norte Fluminense tem IFF?</h5>
 
