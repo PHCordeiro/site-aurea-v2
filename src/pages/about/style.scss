@@ -104,6 +104,7 @@
         z-index: 1;
         text-align: left;
         width: 50vw;
+        line-height: 1.6;
     }
 }
 
@@ -139,6 +140,7 @@
             text-align: center;
             width: 50vw;
             text-indent: 2em;
+            line-height: 1.6;
         }
     }
     
@@ -159,7 +161,7 @@
             text-align: justify;
             margin: 0 10px 10px 10px;
             width: 25vw;
-            height: 25vh;
+            height: 30vh;
             border-radius: 20px;
             background-image: url('../../imgs/FundoMissao.png');
             background-size: cover;
@@ -175,7 +177,7 @@
             text-align: justify;
             margin: 0 10px 10px 10px;
             width: 25vw;
-            height: 25vh;
+            height: 30vh;
             border-radius: 20px;
             background-image: url('../../imgs/FundoVisao.png');
             background-size: cover;
@@ -187,16 +189,17 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 1em;
+            padding: 1em 1em 13.5em 1em;
             text-align: left;
             margin: 0 10px 10px 10px;
             width: 25vw;
-            height: 25vh;
+            height: 30vh;
             border-radius: 20px;
             background-image: url('../../imgs/FundoValores.png');
             background-size: cover;
             background-color: $roxo;
             transition: all 0.5s;
+            // padding-bottom: 10em;
         }
 
         .cardM:hover {
@@ -377,7 +380,7 @@
 
                     padding: 1rem;
                     text-align: justify;
-                    line-height: 1.4rem;
+                    line-height: 1.6;
                     color: $branco;
 
                 }
@@ -485,17 +488,19 @@
             margin: 4vh 0 10vh 0;
             width: 100vw;
     
-            .cardM, .cardV1, .cardV2{
+            .cardM, .cardV1{
 
                 width: 70vw;
-                height: 25vh;
+                height: 30vh;
                 margin-bottom: 3rem;
-
+                
             }
-
+            
             .cardV2 {
-
+                width: 70vw;
+                height: auto;
                 margin-bottom: 0;
+                padding: 1em;
 
             }
         }
