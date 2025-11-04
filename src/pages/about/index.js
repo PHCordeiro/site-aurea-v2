@@ -8,6 +8,7 @@ import mascote1 from '../../imgs/Mascote1.png'
 import Linkedin from "../../imgs/linkedinLogo2.svg"
 
 import './style.scss'
+import WhatsappButton from '../../components/whatsappButton';
 
 function AboutUs() {
 
@@ -363,6 +364,8 @@ function AboutUs() {
                 </div>
 
             </section>
+
+            <WhatsappButton />
 
             <Footer />
 
