@@ -4,6 +4,7 @@ import Header from '../../components/header'
 import Footer from '../../components/footer'
 
 import mascote1 from '../../imgs/Mascote1.png'
+import aureaTeam from '../../imgs/AureaTeam.png'
 
 import Linkedin from "../../imgs/linkedinLogo2.svg"
 
@@ -23,19 +24,17 @@ function AboutUs() {
                 <div className='rowObjects'>
                     <div className='collumnObjects'>
                         <h1>Prazer, Aurea!</h1>
-                        <p>Fundada no dia 9 de Agosto de 2016, a Aurea Soluções e Projetos deu os seus primeiros passos como uma Empresa Júnior no Instituto Federal Fluminense como uma empresa multidiciplinar que presta serviços nas áreas de
-                            <a href="/Servicos">Engenharia de Computação, </a>
-                            <a href="/Servicos">Engenharia Elétrica, </a>
-                            <a href="/Servicos">Engenharia de Controle e Automação, </a>
-                            <a href="/Servicos">e Arquitetura e Urbanismo.</a>
+                        <p>Fundada no dia 9 de Agosto de 2016, a Aurea Soluções e Projetos deu os seus primeiros passos como uma Empresa Júnior no Instituto Federal Fluminense como uma empresa multidiciplinar que presta serviços nas áreas de&nbsp;
+                            <a href="/Servicos">Engenharia de Computação,</a>
+                            <a href="/Servicos">Engenharia Elétrica,</a>
+                            <a href="/Servicos">Engenharia de Controle e Automação,</a>
+                            <a href="/Servicos">Arquitetura e Urbanismo.</a>
                         </p>
-                        <p>No ano de 2018 a Aurea passou pelo processo de federação, que de fato a introduziu ao MEJ (Movimento Empresa Júnior) como uma Empresa Júnior. E com muito esforço e trabalho duro recebemos nos anos de 2019 e 2020 diversas premiações de visibilidade estadual, fazendo com que a Aurea fosse reconhecida como uma empresa "Bi Impacto", ou seja, uma Empresa Júnior capaz de bater todas as suas metas anuais em dois anos consecutivos. Dessa forma, em um cenário de maturidade ainda mais expressivo após um 2022 incrível, atualmente, em 2023, a Aurea está atrás de sua próxima conquista em rede: Alcançar, pela segunda vez em sua história, o Bi Impacto!</p>
-
-                        {/* <a href="/Membros" className="callToActionMembers">Clique aqui e conheça nossas lideranças</a> */}
+                        <p>No ano de 2018 a Aurea passou pelo processo de federação, que de fato a introduziu ao MEJ (Movimento Empresa Júnior) como uma Empresa Júnior. E com muito esforço e trabalho duro recebemos nos anos de 2019 e 2020 diversas premiações de visibilidade estadual, fazendo com que a Aurea fosse reconhecida como uma empresa "Bi Impacto", ou seja, uma Empresa Júnior capaz de bater todas as suas metas anuais em dois anos consecutivos. Dessa forma, em um cenário de maturidade ainda mais expressivo após um 2022 incrível, atualmente, em 2026, a Aurea está atrás de sua próxima conquista em rede: Alcançar, pela segunda vez em sua história, o Bi Impacto!</p>
 
                     </div>
                     <div className="heroImgWrapper">
-                        <img draggable="false" src={mascote1} alt="" />
+                        <img draggable="false" src={aureaTeam} alt="" />
                     </div>
                 </div>
 
