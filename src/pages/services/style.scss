@@ -142,6 +142,202 @@
     }
 }
 
+
+#cards-servicos {
+  padding: 6rem 2rem;
+  text-align: center;
+  // background: linear-gradient(135deg, rgba($roxo, 0.1), rgba($amarelo, 0.05));
+  backdrop-filter: blur(10px);
+  min-height: 100vh;
+
+  .titulo {
+    font-size: 2.5rem;
+    color: $roxo;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: $amarelo;
+      margin: 0.75rem auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card-servico {
+    background: #0e0e0e;
+    border: 1px solid $amarelo;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+    position: relative;
+
+    .card-btn{
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+
+        .btn{
+            display: inline-block;
+            padding: 2px 7px;
+            background-color: $amarelo;
+            color: $preto;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            // transition: all 0.2s ease;
+    
+            &:hover {
+                background-color: darken($roxo, 10%);
+                color: $amarelo;
+                transform: scale(1.05);
+            }
+        }
+      }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border-color: rgba($amarelo, 0.5);
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: $amarelo;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        color: $branco;
+        font-size: 1rem;
+        line-height: 1.8;
+        opacity: 0.9;
+        position: relative;
+        padding-left: 1.5rem;
+
+        &:hover {
+            color: $amarelo;
+            border-bottom: 2px solid $roxo;
+        }
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: $amarelo;
+        }
+      }
+
+    }
+  }
+}
+
+#contato-servicos {
+  background: rgba($branco, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba($roxo, 0.15);
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $branco;
+  border-radius: 2rem;
+  margin: 1rem auto 6rem auto;
+  max-width: 1000px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, rgba($amarelo, 0.25), transparent 70%);
+    top: -50px;
+    right: -50px;
+    filter: blur(40px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba($roxo, 0.25), transparent 70%);
+    bottom: -60px;
+    left: -60px;
+    filter: blur(50px);
+  }
+
+  .conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $amarelo;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: rgba($branco, 0.85);
+      margin-bottom: 2rem;
+    }
+
+    .botao-contato {
+      background: linear-gradient(135deg, $amarelo, lighten($amarelo, 8%));
+      color: $roxo;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 6px 20px rgba($amarelo, 0.25);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba($amarelo, 0.4);
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 768px) {
     #body {
         display: flex;
