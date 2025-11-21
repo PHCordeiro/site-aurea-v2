@@ -7,6 +7,7 @@
         overflow-x: hidden;
         padding-top: 20vh;
         background-color: rgb(14, 14, 14);
+        height:auto;
 
         .about {
             width: 80vw;
@@ -19,13 +20,25 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .logoFooter {
-            img {
-                display: none;
-            }
-        }
+        width: 100%;
+        gap: 2rem;      // adiciona espaçamento entre blocos
+        padding: 0 10px;
     }
+        .logoFooter {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin:0;
+            padding: 0;
+            text-align: center;
+        }
+        .logoFooter img {
+            width: 200px;        // Ajusta proporcionalmente à tela
+            height: 100px;       
+        }
+    
 
     .adress {
         padding: 0px;
@@ -67,7 +80,6 @@ body {
     padding: 15px 30px;
     margin-left: 55px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: white;
     background: $roxo;
@@ -177,7 +189,7 @@ footer {
 .logoFooter {
 
     height: 100%;
-    text-align: right;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +201,7 @@ footer {
 
 .logoFooter img {
 
-    height: 30vh;
+    max-height: 30vh;
 
 }
 
@@ -218,7 +230,8 @@ footer {
     justify-content: space-around;
     padding-right: 25px;
     margin-left: 75px;
-    //margin-right: 10px;
+    margin-right: 10px;
+    margin-top:-45px;
 
 }
 

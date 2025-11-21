@@ -21,7 +21,7 @@ export default function Footer (props) {
 
                 <div className="rowObjects">
 
-                    <div className='logoFooter' >
+                    <div className="logoFooter" >
 
 
                         <img src={logoAurea} alt='logoAurea' />
