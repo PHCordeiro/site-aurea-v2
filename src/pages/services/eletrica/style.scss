@@ -92,7 +92,7 @@
 
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 4rem;
 
         .service1 {
             
@@ -101,19 +101,21 @@
             width: 80vw;
             padding: 1rem;
 
-            h1, p {
+            h1 {
                 color: $amarelo;
             }
 
             p {
+                margin-top: 1em;
                 text-align: justify;
                 text-indent: 2em;
+                color: $branco;
             }
         }
     }
 
     .eletricaPortf {
-
+        margin-top: 5rem;
         width: 80vw;
         background-color: $roxo;
         border-radius: 20px;
