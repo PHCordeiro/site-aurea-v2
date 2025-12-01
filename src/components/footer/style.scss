@@ -19,17 +19,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .logoFooter {
-            img {
-                display: none;
-            }
-        }
+        flex-wrap: wrap;
+        gap: 50px;
     }
 
     .adress {
         padding: 0px;
-        margin: 0px;
+        margin-bottom: 0;
 
         p {
             width: 80vw;
@@ -163,7 +159,7 @@ footer {
     padding: 30px 0px;
     flex-direction: column;
     margin-top: 4rem;
-    height: 50vh;
+    // height: 50vh;
 
 }
 
@@ -183,7 +179,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
 }
 
 
@@ -210,7 +205,7 @@ footer {
 
 .adress {
 
-    height: 20vh;
+    // height: 20vh;
     display: flex;
     flex-direction: column;
     width: 100%;
