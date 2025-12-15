@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 
-    &::selection{
+    &::selection {
         background-color: $roxo;
     }
 }
@@ -34,11 +34,11 @@
         width: 100%;
         height: 90vh;
         margin-top: 100px;
-  
+
     }
 
     .heroTitle {
-            
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,7 +46,7 @@
         z-index: 100;
         //background-color: rgb(148, 111, 111);
 
-        
+
 
         h1 {
             color: $branco;
@@ -69,12 +69,12 @@
         //     background-color: var($roxo);
         //     color: var($roxo);
         //   }
-          
+
         //   h1::selection {
         //     background-color: var($roxo);
         //     color: var($roxo);
         //   }
-          
+
         //   h1:focus {
         //     outline: none;
         //   }
@@ -86,11 +86,11 @@
         //     top: 0; right: 0; bottom: 0; left: 0;
         //     inset: 0 0 0 0;
         //     background: #d4d4d4;
-            
+
         //     z-index: -1;
         //     transition: transform .3s ease;
         //   }
-          
+
         // h1::before {
         //     transform: scaleX(0);
         //     transform-origin: bottom right;
@@ -100,7 +100,7 @@
         //     transform: scaleX(1);
         //     transform-origin: bottom left;
         // }
-        
+
         h2 {
             font-weight: 200;
             color: $branco;
@@ -131,7 +131,7 @@
     }
 
     .heroData {
-                
+
         display: flex;
         //background-color: rgb(128, 74, 74);
         width: 60vw;
@@ -140,24 +140,24 @@
         margin-left: 1rem;
         //align-items: center;
         font-family: 'Bebas Neue', sans-serif;
-        
-        
+
+
     }
 
     .heroCard {
-        margin: 1rem;   
+        margin: 1rem;
         text-align: left;
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         text-shadow: -2px 3px 5px rgba(0, 0, 0, 0.548);
-    
+
         p {
             margin-right: .6rem;
             color: $branco;
             font-size: 5rem;
             font-family: 'Bebas Neue', sans-serif;
 
-            &::selection{
+            &::selection {
                 background-color: #dbb826;
             }
         }
@@ -175,7 +175,7 @@
 #services {
 
     display: flex;
-    ///align-items: center;
+    align-items: center;
     flex-direction: column;
     background-color: $preto;
     width: 100%;
@@ -186,131 +186,64 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
     }
-    
+
     h1 {
 
         text-align: center;
         width: 100%;
         color: $branco;
         margin-top: 5vh;
-        font-size: 3rem;
+        font-size: 4rem;
         //text-shadow: -2px 3px 5px rgba(121, 8, 196, 0.548);
 
 
     }
 
-    
+
 
     p {
+
         text-align: center;
-        margin-left: 1rem;
+        margin: 5vh 0 5vh 0;
         color: $amarelo;
-        margin-top: 5vh;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+         text-shadow: 0 0 3px #db9c26;
+
         // animation: glitch1 2s infinite;
     }
 
 
     h2 {
 
-        color: $branco;
+        text-shadow: 0 0 1px #000000;
+        color: $amarelo;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
-        font-weight: 200;
-        background-color: $preto;
-        opacity: 0.5;
-        padding: 3px;
-        
+        font-weight: 700px;
+        background-color: $branco;
+        //opacity: 0.5; caio removeu
+        padding: 0px;
+
     }
 
 
     h3 {
         color: $branco;
         font-family: 'Montserrat', sans-serif;
+        color: $amarelo;
         font-size: 1rem;
-        font-weight: 200;
-        background-color: $preto;
-        opacity: 0.5;
-        padding: 3px;
+        font-weight: 700;
+        background-color: $branco;
+        //opacity: 0.5; caio removeu
+        padding: 1px;
     }
 
-    .sectorServicearq {
-
-        margin: 20px;
-        text-align: center;
-        background-color: $roxo;
-        width: 30vw;
-        height: 20vh;
-        background-image: url(../../imgs/arqFundo.png);
-        background-size: cover;
-        transition: all 0.5s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 5px;
-
-    }
-
-    .sectorServicecomp {
-
-        margin: 20px;
-        text-align: center;
-        background-color: $roxo;
-        width: 30vw;
-        height: 20vh;
-        background-image: url(../../imgs/compFundo.png);
-        background-size: cover;
-        transition: all 0.5s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 5px;
-
-    }
-
-    .sectorServiceele {
-
-        margin: 20px;
-        text-align: center;
-        background-color: $roxo;
-        width: 30vw;
-        height: 20vh;
-        background-image: url(../../imgs/eleFundo.png);
-        background-size: cover;
-        transition: all 0.5s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 5px;
-
-    }
-
-    .sectorServiceauto {
-
-        margin: 20px;
-        text-align: center;
-        background-color: $roxo;
-        width: 30vw;
-        height: 20vh;
-        background-image: url(../../imgs/autoFundo2.png);
-        background-size: cover;
-        transition: all 0.5s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 5px;
-
-    }
-
+    .sectorServicearq,
+    .sectorServicecomp,
+    .sectorServiceele,
+    .sectorServiceauto,
     .sectorServicenegoc {
 
         margin: 20px;
@@ -318,60 +251,75 @@
         background-color: $roxo;
         width: 30vw;
         height: 20vh;
-        background-image: url(../../imgs/negocFundo.png);
         background-size: cover;
-        transition: all 0.5s;
+        background-position: center;
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         border-radius: 5px;
+        filter: grayscale(0.5%) brightness(0.5) sepia(0, 3%) contrast(1.2);
 
     }
 
-    .sectorServicearq:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        h2, h3 {
-            opacity: 1;
-        }
+    .sectorServicearq {
+
+        background-image: url(../../imgs/arquitetura.jpg);
     }
 
-    .sectorServicecomp:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
 
-        h2, h3 {
-            opacity: 1;
-        }
+
+    .sectorServicecomp {
+
+
+        background-image: url(../../imgs/Engcomputaçaocaio.jpg);
+
+
     }
 
-    .sectorServiceele:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+    .sectorServiceele {
 
-        h2, h3 {
-            opacity: 1;
-        }
+
+        background-image: url(../../imgs/Engenharia-Elétrica-IPOG-Crise-Mercado-1280x720.jpg);
+
+
     }
 
-    .sectorServiceauto:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+    .sectorServiceauto {
 
-        h2, h3 {
-            opacity: 1;
-        }
+
+        background-image: url(../../imgs/1.-AUTOMACAO-RESIDENCIAL.jpeg);
+
+
     }
 
+    .sectorServicenegoc {
+
+
+        background-image: url(../../imgs/comercialcaio.jpg);
+
+
+    }
+
+    .sectorServicearq:hover,
+    .sectorServicecomp:hover,
+    .sectorServiceele:hover,
+    .sectorServiceauto:hover,
     .sectorServicenegoc:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
-        h2, h3 {
+        filter: saturate(200%); //maior que 100% satura
+    
+
+        h2,
+        h3 {
             opacity: 1;
         }
     }
+
+    
 
     .rowObjects {
         display: flex;
@@ -382,21 +330,29 @@
         a {
             background-color: $amarelo;
             margin-top: 1em;
-            color: $roxo;
+            color: $branco;
+            text-shadow: #000000;
             padding: 0.5em;
             border-radius: 5px;
             text-decoration: none;
-            transition: all 0.3s;
+            transition:  0.3s ease-in;
+            transition: 0.8s ease-out
         }
 
         a:hover {
-            background-color: $branco;
+               background: linear-gradient(to bottom, $amarelo, lighten($amarelo, 5%)); 
+    
+    /* Simula o botão sendo "pressionado" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), /* Sombra externa menor */
+                /* Mantém a micro-textura */
+                inset 0 1px 0px 0px rgba(255, 255, 255, 0.2), 
+                inset 0 -1px 0px 0px rgba(0, 0, 0, 0.2); 
+    
+    transform: translateY(2px); /* Desce 2px (o dobro do hover anterior) para simular o clique */
+            
         }
 
-        a:active {
-            background-color: $preto;
-            transition: all 0.1s;
-        }
+       
     }
 
 }
@@ -418,7 +374,7 @@
             width: 55vw;
             flex-direction: column;
             padding: 1rem 2rem;
-            
+
 
             h1 {
                 font-size: 3rem;
@@ -474,7 +430,7 @@
         justify-content: center;
         padding-bottom: 105px;
         justify-content: space-around;
-        
+
 
         .feedbackCards {
 
@@ -494,7 +450,7 @@
             border-bottom-left-radius: 12px;
 
             border-left: 10px solid $roxo;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
             .feedbackImgWrapper {
 
@@ -504,7 +460,7 @@
                 margin-bottom: 1rem;
 
                 img {
-                    
+
                     width: 80px;
                     border-radius: 100px;
                     height: 80px;
@@ -514,7 +470,7 @@
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
-                    
+
                     pointer-events: none;
                     -webkit-user-drag: none;
                     -khtml-user-drag: none;
@@ -541,6 +497,7 @@
 #ourPartners {
     width: 100vw;
     padding: 2rem;
+    text-align: center;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -549,19 +506,21 @@
 
     h1 {
         font-size: 3rem;
-        margin-left: 3rem;
+        margin: auto;
         color: $amarelo;
         text-align: center;
     }
 
     p {
-        margin-top: 2rem;
+        margin: 2rem auto 0 auto;
+
         font-size: 1.3rem;
         font-weight: 200;
         padding: 0 3rem;
         text-align: center;
+
     }
-    
+
     .partnersCardsWrapper {
         padding: 0 2rem;
         display: flex;
@@ -586,8 +545,8 @@
 
 
         .partnersText {
-            
-            display:flex;
+
+            display: flex;
             align-items: center;
             flex-direction: column;
             text-align: center;
@@ -600,24 +559,25 @@
                 //padding: 0 2rem;
 
             }
-    
+
             a {
                 text-decoration: none;
                 color: $amarelo;
+                text-shadow: 0 0 3px #db9c26;
             }
-    
+
             p {
                 margin-top: .65rem;
                 font-size: 1rem;
                 line-height: 1.6;
             }
-            
+
         }
-        
+
     }
 
     .partnersImgWrapper {
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,10 +585,10 @@
         height: 35vh;
 
         img {
-            
+
             //margin-bottom: 0rem;
             width: 200px;
-            filter:grayscale(1) blur(2px);
+            filter: none;
             transition: all .5s ease-in-out;
             object-fit: contain;
 
@@ -643,58 +603,70 @@
 
 @keyframes glitch1 {
     0% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     7% {
-      transform: skew(-0.25deg, -0.45deg);
-      opacity: 0.75;
+        transform: skew(-0.25deg, -0.45deg);
+        opacity: 0.75;
     }
+
     10% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     27% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     30% {
-      transform: skew(0.4deg, -0.05deg);
-      opacity: 0.75;
+        transform: skew(0.4deg, -0.05deg);
+        opacity: 0.75;
     }
+
     35% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     52% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     55% {
-      transform: skew(-.5deg, 0.1deg);
-      opacity: 0.75;
+        transform: skew(-.5deg, 0.1deg);
+        opacity: 0.75;
     }
+
     50% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     72% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     75% {
-      transform: skew(0.2deg, .5deg);
-      opacity: 0.75;
+        transform: skew(0.2deg, .5deg);
+        opacity: 0.75;
     }
+
     80% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
+
     100% {
-      transform: none;
-      opacity: 1;
+        transform: none;
+        opacity: 1;
     }
-  }
+}
 
 @media screen and (max-width: 1260px) {
 
@@ -704,7 +676,7 @@
     }
 
     .heroData {
-        display:flex;
+        display: flex;
         flex-direction: column;
 
         .heroCard {
@@ -725,7 +697,7 @@
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     #mainHome {
 
@@ -736,7 +708,7 @@
         align-items: center;
         justify-content: center;
         overflow-x: hidden;
-    
+
     }
 
     #heroSection {
@@ -749,6 +721,7 @@
                 line-height: 2rem;
                 text-align: left;
                 color: $amarelo;
+                
             }
 
             h2 {
@@ -756,7 +729,7 @@
             }
 
             .heroData {
-                
+
                 display: flex;
                 flex-direction: column;
 
@@ -768,6 +741,7 @@
 
                     p {
                         font-size: 3rem;
+                        
                     }
 
                     b {
@@ -786,7 +760,7 @@
             right: 0;
             width: 10vw;
             height: 80vh;
-    
+
             img {
 
                 object-fit: contain;
@@ -796,9 +770,9 @@
                 margin-bottom: 5rem;
 
             }
-    
+
         }
-    
+
 
     }
 
@@ -844,7 +818,7 @@
             right: 0;
             width: 10vw;
             height: 80vh;
-    
+
             img {
                 display: none;
                 object-fit: contain;
@@ -853,15 +827,17 @@
                 -webkit-user-drag: none;
                 background-color: $preto;
             }
-    
+
         }
 
-        .sectorServicearq, .sectorServiceele,
-        .sectorServiceauto, .sectorServicecomp,
+        .sectorServicearq,
+        .sectorServiceele,
+        .sectorServiceauto,
+        .sectorServicecomp,
         .sectorServicenegoc {
 
             width: 90vw;
-    
+
         }
     }
 
@@ -893,7 +869,7 @@
                     // background-color: $roxo;
                     text-align: center;
                 }
-        
+
                 p {
                     text-align: justify;
                     text-indent: 2em;
@@ -915,11 +891,11 @@
 
     #feedbackCards {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
 
         .feedbackCardsWrapper {
             flex-direction: column;
@@ -955,6 +931,7 @@
             padding: 0;
             margin: 0;
             padding: 0 2rem;
+
         }
 
         .partnersCardsWrapper {
@@ -966,8 +943,9 @@
             .partnersImgWrapper {
                 width: 80vw;
                 height: 20vh;
+
                 img {
-                    filter: none;
+                    filter: none; //caio coloqueu none em grayscale(1) blur(2px)
                 }
             }
 

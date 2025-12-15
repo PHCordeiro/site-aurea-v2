@@ -58,7 +58,7 @@ function Home() {
 
                     <div className="heroImgWrapper">
 
-                        <img draggable="false" src={Astronauta1} alt="" />
+                       {/* <img draggable="false" src={Astronauta1} alt="" />*/}
 
                     </div>
 
@@ -75,7 +75,7 @@ function Home() {
 
                     <div className="servicesImgWrapper">
 
-                        <img draggable="false" src={astronauta} alt="" />
+                        {/*<img draggable="false" src={astronauta} alt="" />*/}
 
                     </div>
 
@@ -133,7 +133,7 @@ function Home() {
 
                     <div className="chooseImgWrapper">
 
-                        <img draggable="false" src={LuaRoxo} alt="" />
+                        {/*<img draggable="false" src={LuaRoxo} alt="" />*/}
 
                     </div>
 
